@@ -1,3 +1,11 @@
 *{
     all: unset;
 }
+body {
+    background-color:red;
+}
+.nav {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: row;
+}
