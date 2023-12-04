@@ -1,39 +1,119 @@
 <!DOCTYPE html>
-<header>
+<html lang="pt-br">
+  <head>
     <link rel="stylesheet" href="style.css">
-</header>
-<body>
-<div class="logo">
-    <p>BURN DATA BI</p>
-<img src="logo.png" alt="logo">
-</div>
-<div class="nav">
-    <div class="card"><span>Módulo Financeiro</span>
-	<p>Controles Financeiros com indicadores assertivos, tudo o que sua empresa precisa!<p>
-	</div>
-    <div class="card"><span>Módulo Financeiro</span>
-	<p>Projeção de vendas, fluxo de saídas e prospecção de clientes em Dashboard.<p>
-	</div>
-    <div class="card"><span>Módulo Financeiro</span>
-	<p>Inventário, Transporte, carregamento e indicadores em relatórios assertivos.<p>
-	</div>
-    <div class="card"><span>Módulo Financeiro</span>
-	<p>Controles Financeiros com indicadores assertivos, tudo o que sua empresa precisa!<p>
-	</div>
-</div>
-<div class="moto">
-    <p> Automatize seus relatórios e obtenhas os melhores indicadores para tomada de decisão.</p>
-  
-</div>
-<div class="contact">
- <img alt="Telegram">
-   <img alt="Whats">
-</div>
-<div class="waw">
-<p> Quem somos nós.</p>
-<div>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo">
+        <p>BURN DATA BI</p>
+        <img src="logo.png" alt="logo">
+      </div>
 
-</body>
-<footer>
+      <div class="nav">
+        <div class="card">
+          <span>Módulo Financeiro</span>
+          <p>Controles Financeiros com indicadores assertivos, tudo o que sua empresa precisa!</p>
+          <a href="#"><button>Acessar</button></a>
+        </div>
 
-</footer>
+        <div class="card">
+          <span>Módulo Comercial</span>
+          <p>Projeção de vendas, fluxo de saídas e prospecção de clientes em Dashboard.</p>
+          <a href="#"><button>Acessar</button></a>
+        </div>
+
+        <div class="card">
+          <span>Módulo Logístico</span>
+          <p>Inventário, Transporte, carregamento e indicadores em relatórios assertivos.</p>
+          <a href="#"><button>Acessar</button></a>
+        </div>
+        
+        <div class="card">
+          <span>Módulo Administrativo</span>
+          <p>Avalie o controle de processos, avaliações e projetos com os melhores indicadores.</p>
+          <button>Acessar</button>
+        </div>
+      </div>
+
+      <div class="moto">
+        <p> Automatize seus relatórios e obtenha os melhores indicadores para tomada de decisão.</p>
+      </div>
+
+      <div class="contact">
+       <img src="tele.png" alt="Telegram">
+        <img src="zap.png" alt="WhatsApp">
+      </div>
+
+      <div class="waw">
+        <a href="#"><button id="whoarewe" onclick="ShowCard">Quem nós somos?</button></a>
+      </div>
+
+      <div id="Able"class="coders">
+      <div class="incard">
+        <div class="container">
+          <div class="job">
+            <span>Analista de BI</span>
+          </div>
+          <div class="jobimg">
+            <img src="zap.png" alt="foto">
+          </div>  
+         </div> 
+          <div class="text">
+          <p>Leonardo Veloso</p>
+          <p>Imperatriz</p>
+          <p>Analista e Desenvolvedor</p>
+          </div> 
+      </div>
+
+      <div class="incard">
+        <div class="container">
+          <div class="job">
+            <span>Analista de BI</span>
+          </div>
+          <div class="jobimg">
+            <img src="zap.png" alt="foto">
+          </div>  
+         </div>
+        <div class="text">
+          <p>Aucelio Pereira</p>
+          <p>Imperatriz</p>
+          <p>Analista e Desenvolvedor</p>
+          </div> 
+      </div>
+
+      <div class="incard">
+       <div class="container">
+        <div class="job">
+          <span>Analista de BI</span>
+        </div>
+        <div class="jobimg">
+          <img src="zap.png" alt="foto">
+        </div>  
+       </div>
+      <div class="text">
+        <p>Matheus Campos</p>
+        <p>Imperatriz</p>
+        <p>Desenvolvedor Web</p>
+        </div> 
+      </div>
+    </div>
+    </div>
+
+    <script>
+      document.getElementById("whoarewe").addEventListener("click", ShowCard);
+      function ShowCard() {
+    var div = document.getElementById("Able");
+    var computedStyle = window.getComputedStyle(div);
+    console.log("New display:",computedStyle.display);
+
+    if (computedStyle.display==="none") {
+        div.style.display="flex";
+    } else {
+      div.style.display="none";
+    }
+   
+}
+    </script>
+  </body>
+</html>
