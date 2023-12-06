@@ -6,7 +6,7 @@
   <body>
     <div class="main">
       <div class="logo">
-        <p>BURN DATA BI</p>
+        <h1>BURN DATA BI</h1>
         <img src="logo.png" alt="logo">
       </div>
 
@@ -14,25 +14,25 @@
         <div class="card">
           <span>Módulo Financeiro</span>
           <p>Controles Financeiros com indicadores assertivos, tudo o que sua empresa precisa!</p>
-          <a href="#"><button>Acessar</button></a>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiODc5NGIyYmYtNGIzNi00YjE3LWE4MTEtZDZkMmM5ZTE5Y2QyIiwidCI6IjlkZDY1NWEzLTIxYzEtNDZiZC1hMTA2LTBmMDkzNjQ4MzFkNCJ9&pageName=ReportSection9fa682df7949459a035b"><button>Acessar</button></a>
         </div>
 
         <div class="card">
           <span>Módulo Comercial</span>
           <p>Projeção de vendas, fluxo de saídas e prospecção de clientes em Dashboard.</p>
-          <a href="#"><button>Acessar</button></a>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiODc5NGIyYmYtNGIzNi00YjE3LWE4MTEtZDZkMmM5ZTE5Y2QyIiwidCI6IjlkZDY1NWEzLTIxYzEtNDZiZC1hMTA2LTBmMDkzNjQ4MzFkNCJ9&pageName=ReportSectionccd696a2b54176e2f4b6"><button>Acessar</button></a>
         </div>
 
         <div class="card">
           <span>Módulo Logístico</span>
           <p>Inventário, Transporte, carregamento e indicadores em relatórios assertivos.</p>
-          <a href="#"><button>Acessar</button></a>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiODc5NGIyYmYtNGIzNi00YjE3LWE4MTEtZDZkMmM5ZTE5Y2QyIiwidCI6IjlkZDY1NWEzLTIxYzEtNDZiZC1hMTA2LTBmMDkzNjQ4MzFkNCJ9&pageName=ReportSection93fdcc9284d60145ced0"><button>Acessar</button></a>
         </div>
         
         <div class="card">
           <span>Módulo Administrativo</span>
           <p>Avalie o controle de processos, avaliações e projetos com os melhores indicadores.</p>
-          <button>Acessar</button>
+         <a href="https://app.powerbi.com/view?r=eyJrIjoiODc5NGIyYmYtNGIzNi00YjE3LWE4MTEtZDZkMmM5ZTE5Y2QyIiwidCI6IjlkZDY1NWEzLTIxYzEtNDZiZC1hMTA2LTBmMDkzNjQ4MzFkNCJ9&pageName=ReportSection244472bac0d0db952058"><button>Acessar</button></a>
         </div>
       </div>
 
@@ -49,71 +49,97 @@
         <a href="#"><button id="whoarewe" onclick="ShowCard">Quem nós somos?</button></a>
       </div>
 
-      <div id="Able"class="coders">
-      <div class="incard">
-        <div class="container">
-          <div class="job">
-            <span>Analista de BI</span>
-          </div>
-          <div class="jobimg">
-            <img src="zap.png" alt="foto">
-          </div>  
-         </div> 
-          <div class="text">
-          <p>Leonardo Veloso</p>
-          <p>Imperatriz</p>
-          <p>Analista e Desenvolvedor</p>
-          </div> 
-      </div>
-
-      <div class="incard">
-        <div class="container">
-          <div class="job">
-            <span>Analista de BI</span>
-          </div>
-          <div class="jobimg">
-            <img src="zap.png" alt="foto">
-          </div>  
-         </div>
-        <div class="text">
-          <p>Aucelio Pereira</p>
-          <p>Imperatriz</p>
-          <p>Analista e Desenvolvedor</p>
-          </div> 
-      </div>
-
-      <div class="incard">
-       <div class="container">
-        <div class="job">
-          <span>Analista de BI</span>
+      <div id="Able" class="coders">
+        <div>
+            <button id="btn" onclick="CloseCard()">Fechar</button>
         </div>
-        <div class="jobimg">
-          <img src="zap.png" alt="foto">
-        </div>  
-       </div>
-      <div class="text">
-        <p>Matheus Campos</p>
-        <p>Imperatriz</p>
-        <p>Desenvolvedor Web</p>
-        </div> 
+        <div class="message-panel">
+          <div class="message-title">Sobre nós:</div>
+          <div class="message-content">
+              <p>Experientes em análise de dados, somos uma empresa que está trazendo algo inovador
+                para o mercado regional.
+              </p>
+              <p>
+                A ferramenta de Business Intelligence (PowerBi), promete trazer formas de visualziar seus
+                dados com indicadores de performance assertivos.
+              </p>
+              <p>
+                Isso inclui automatizar seus relatórios a nível gerencial com um visão macro e micro do que acontece
+                para que a tomada de decisão seja baseada em dados e assim trazendo aumento no renoto sobre investimento da empresa.
+              </p>
+              <p>Muito prazer somos a BURN DATA BI</p>
+          </div>
       </div>
+        <div class="coders-content">
+            <div class="coders-title">Conheça nossa equipe</div>
+    
+            <div class="coder" id="Leo">
+                <img src="https://i.ibb.co/M1vsdLt/LEo.png" alt="foto">
+                <div class="coder-info">
+                    <div class="coder-name">Leonardo Veloso</div>
+                    <div class="coder-location">Imperatriz</div>
+                    <div class="coder-role">Analista de BI</div>
+                    <div class="coder-skills">
+                      <div class="skill">Análise de Dados</div>
+                      <div class="skill">Excel Avançado</div>
+                      <div class="skill">Power BI Analisys</div>
+                      <div class="skill">Banco de Dados</div>
+                      <div class="skill">ETL</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="coder" id="Aucelio">
+                <img src="https://i.ibb.co/SVShyz4/aucelio.png" alt="foto">
+                <div class="coder-info">
+                    <div class="coder-name">Aucelio Pereira</div>
+                    <div class="coder-location">Imperatriz</div>
+                    <div class="coder-role">Analista e Desenvolvedor</div>
+                    <div class="coder-skills">
+                        <div class="skill">Análise de Dados</div>
+                        <div class="skill">Excel Avançado</div>
+                        <div class="skill">Power BI Analisys</div>
+                        <div class="skill">Ciência de Dados</div>
+                        <div class="skill">ETL</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="coder" id="Matheus">
+                <img src="eu.jpeg" alt="foto">
+                <div class="coder-info">
+                    <div class="coder-name">Matheus Campos</div>
+                    <div class="coder-location">Imperatriz</div>
+                    <div class="coder-role">Desenvolvedor Web e Programador</div>
+                    <div class="coder-skills">
+                        <div class="skill">HTML e CSS</div>
+                        <div class="skill">Git e Github</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">React</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-
+      </div>
     <script>
       document.getElementById("whoarewe").addEventListener("click", ShowCard);
-      function ShowCard() {
-    var div = document.getElementById("Able");
+      var div = document.getElementById("Able");
     var computedStyle = window.getComputedStyle(div);
-    console.log("New display:",computedStyle.display);
+    
+      function ShowCard() {
+   
 
     if (computedStyle.display==="none") {
         div.style.display="flex";
     } else {
       div.style.display="none";
     }
+   }
+   function CloseCard(){
    
-}
+    div.style.display="none";
+   }
     </script>
   </body>
 </html>
